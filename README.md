@@ -30,5 +30,8 @@ this is desk work only until a candidate survives validation.
 
 ## Data
 
-NASA G-LiHT (Goddard LiDAR, Hyperspectral & Thermal Imager), via ORNL DAAC.
-Free NASA Earthdata login required.
+NASA G-LiHT (Goddard LiDAR, Hyperspectral & Thermal Imager).
+Canonical source is LP DAAC (GLDTMK.001), which needs a free NASA
+Earthdata login. This pilot used the open Scholar@UC mirror instead
+(no login): 50 cm DEMs at https://scholar.uc.edu — see
+`data/TILE.md` for the exact tile and download URL.
