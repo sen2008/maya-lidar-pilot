@@ -1,0 +1,125 @@
+{
+  "window": {
+    "e0": 698650.5,
+    "e1": 699249.5,
+    "n0": 2028250.5,
+    "n1": 2028849.5,
+    "center_e": 698950.0,
+    "center_n": 2028550.0
+  },
+  "cell": 0.5,
+  "chip_size": 416,
+  "stride": 208,
+  "chips": [
+    {
+      "id": "control_0.5m_r208_c0",
+      "tag": "control",
+      "res": 0.5,
+      "row": 208,
+      "col": 0,
+      "e_left": 698650.5,
+      "n_top": 2028745.5,
+      "cell": 0.5,
+      "nodata_frac": 0.253
+    },
+    {
+      "id": "control_0.5m_r208_c208",
+      "tag": "control",
+      "res": 0.5,
+      "row": 208,
+      "col": 208,
+      "e_left": 698754.5,
+      "n_top": 2028745.5,
+      "cell": 0.5,
+      "nodata_frac": 0.392
+    },
+    {
+      "id": "control_0.5m_r416_c0",
+      "tag": "control",
+      "res": 0.5,
+      "row": 416,
+      "col": 0,
+      "e_left": 698650.5,
+      "n_top": 2028641.5,
+      "cell": 0.5,
+      "nodata_frac": 0.0
+    },
+    {
+      "id": "control_0.5m_r416_c208",
+      "tag": "control",
+      "res": 0.5,
+      "row": 416,
+      "col": 208,
+      "e_left": 698754.5,
+      "n_top": 2028641.5,
+      "cell": 0.5,
+      "nodata_frac": 0.002
+    },
+    {
+      "id": "control_0.5m_r416_c416",
+      "tag": "control",
+      "res": 0.5,
+      "row": 416,
+      "col": 416,
+      "e_left": 698858.5,
+      "n_top": 2028641.5,
+      "cell": 0.5,
+      "nodata_frac": 0.042
+    },
+    {
+      "id": "control_0.5m_r416_c624",
+      "tag": "control",
+      "res": 0.5,
+      "row": 416,
+      "col": 624,
+      "e_left": 698962.5,
+      "n_top": 2028641.5,
+      "cell": 0.5,
+      "nodata_frac": 0.163
+    },
+    {
+      "id": "control_0.5m_r624_c0",
+      "tag": "control",
+      "res": 0.5,
+      "row": 624,
+      "col": 0,
+      "e_left": 698650.5,
+      "n_top": 2028537.5,
+      "cell": 0.5,
+      "nodata_frac": 0.016
+    },
+    {
+      "id": "control_0.5m_r624_c208",
+      "tag": "control",
+      "res": 0.5,
+      "row": 624,
+      "col": 208,
+      "e_left": 698754.5,
+      "n_top": 2028537.5,
+      "cell": 0.5,
+      "nodata_frac": 0.0
+    },
+    {
+      "id": "control_0.5m_r624_c416",
+      "tag": "control",
+      "res": 0.5,
+      "row": 624,
+      "col": 416,
+      "e_left": 698858.5,
+      "n_top": 2028537.5,
+      "cell": 0.5,
+      "nodata_frac": 0.0
+    },
+    {
+      "id": "control_0.5m_r624_c624",
+      "tag": "control",
+      "res": 0.5,
+      "row": 624,
+      "col": 624,
+      "e_left": 698962.5,
+      "n_top": 2028537.5,
+      "cell": 0.5,
+      "nodata_frac": 0.0
+    }
+  ]
+}

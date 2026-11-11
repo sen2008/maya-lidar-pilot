@@ -64,3 +64,36 @@
   trained model (Q2000 CNN, F1 0.89 in the 2026 Springer paper).
 - No new site claimed. The only literature-backed feature in the
   tile is the already-known complex #1.
+
+## 2026-11-11 — Q2000 validation run (Lucas-approved)
+
+- RVT composite reproduced from paper Table 3 (MultiHillshade + Slope +
+  Open-Positive + Skyview) with RVT_py. Ambiguities recorded in RESULTS.md:
+  RVT params not in paper (16 dirs, sun elev 35 deg, SVF radius 10 px);
+  ArcGIS brightness/contrast/gamma math undocumented (assumed gamma ->
+  contrast -> brightness, order and formulas recorded); stretch is
+  per-window for window runs, per-tile for the full scan.
+- YOLOv3 DarkNet53 built to match the state dict; STRICT LOAD PASSES
+  (missing [] unexpected []). Two cfg-route bugs fixed during the build
+  (module 15 input = module 12, module 23 input = module 20).
+- VERDICT: the known site IS detected. Window runs (per-window stretch):
+  strongest box 0.61 (600 m) / 0.69 (1200 m) at 62-64 m from published
+  coords, 50x48 m; 8 boxes within 150 m (600 m), 6 (1200 m). Full-tile
+  scan (global stretch): 42 detections, 5 within 150 m, top 0.37 @ 101 m.
+- 0.5 m BEATS 1 m: same 1200 m window, 24 detections (max 0.93) vs 13
+  (max 0.72). Use 0.5 m (matches .emd cell size 0.513 m).
+- NMS 0.1 vs 0.5 barely matters (24 vs 28 at 0.5 m; site detected at both).
+- Control 600 m: 4 detections, max 0.56 — but control is not a true
+  negative (dense settlement; its top feature re-detects at 0.81 in the
+  scan, likely a real structure). No false-positive rate computable.
+- CAUTION: at any practical threshold (>= 0.5) the full-tile scan would
+  MISS the known site (0.37 max near site). Stretch choice moves the
+  site's confidence 0.37 (global) -> 0.69 (per-window). F1 0.89 does not
+  obviously replicate; package val AP ~0.62 is the consistent number.
+  Model = candidate generator needing human review, not a trusted detector.
+- Top unvetted candidates away from site #1: 0.90 @ 699081 E, 2028377 N;
+  0.86 @ 698441 E, 2028526 N; 0.81 @ 699064 E, 2028569 N. Not claimed.
+- Full report: RESULTS.md. Figure: outputs/q2000_detections_figure.png.
+- Scale-up: fix stretch convention + re-validate; need labelled ground
+  truth for any F1 claim; ~200 tiles for 1,200 km2 = 15-60+ h on this VM,
+  well under an hour batched on Broad's RTX 5070.

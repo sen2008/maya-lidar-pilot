@@ -1,0 +1,75 @@
+{
+  "settings": {
+    "conf": 0.1,
+    "nms": 0.5,
+    "pad_exclude_px": 104,
+    "chip_size": 416,
+    "stride": 208,
+    "cell_m": 0.5,
+    "weights": "Q2000_ExRev09.pth"
+  },
+  "n_chips": 10,
+  "n_detections": 4,
+  "detections": [
+    {
+      "chip": "control_0.5m_r416_c624",
+      "tag": "control",
+      "res_m": 0.5,
+      "conf": 0.561,
+      "x1_px": 146.4,
+      "y1_px": 93.1,
+      "x2_px": 256.8,
+      "y2_px": 207.6,
+      "w_m": 55.2,
+      "h_m": 57.3,
+      "e": 699063.3,
+      "n": 2028566.3,
+      "dist_site_m": 422.0
+    },
+    {
+      "chip": "control_0.5m_r624_c416",
+      "tag": "control",
+      "res_m": 0.5,
+      "conf": 0.156,
+      "x1_px": 200.1,
+      "y1_px": 154.1,
+      "x2_px": 297.3,
+      "y2_px": 247.5,
+      "w_m": 48.6,
+      "h_m": 46.7,
+      "e": 698982.9,
+      "n": 2028437.1,
+      "dist_site_m": 441.9
+    },
+    {
+      "chip": "control_0.5m_r624_c416",
+      "tag": "control",
+      "res_m": 0.5,
+      "conf": 0.135,
+      "x1_px": 202.1,
+      "y1_px": 66.2,
+      "x2_px": 272.2,
+      "y2_px": 143.8,
+      "w_m": 35.0,
+      "h_m": 38.8,
+      "e": 698977.1,
+      "n": 2028485.0,
+      "dist_site_m": 461.7
+    },
+    {
+      "chip": "control_0.5m_r624_c624",
+      "tag": "control",
+      "res_m": 0.5,
+      "conf": 0.443,
+      "x1_px": 74.6,
+      "y1_px": 83.8,
+      "x2_px": 138.7,
+      "y2_px": 150.6,
+      "w_m": 32.1,
+      "h_m": 33.4,
+      "e": 699015.8,
+      "n": 2028478.9,
+      "dist_site_m": 423.3
+    }
+  ]
+}

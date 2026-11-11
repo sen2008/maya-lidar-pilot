@@ -1,0 +1,103 @@
+{
+  "window": {
+    "e0": 698351.0,
+    "e1": 699549.0,
+    "n0": 2027951.0,
+    "n1": 2029149.0,
+    "center_e": 698950.0,
+    "center_n": 2028550.0
+  },
+  "cell": 1.0,
+  "chip_size": 416,
+  "stride": 208,
+  "chips": [
+    {
+      "id": "control12_1m_r208_c0",
+      "tag": "control12",
+      "res": 1.0,
+      "row": 208,
+      "col": 0,
+      "e_left": 698351.0,
+      "n_top": 2028941.0,
+      "cell": 1.0,
+      "nodata_frac": 0.49
+    },
+    {
+      "id": "control12_1m_r416_c0",
+      "tag": "control12",
+      "res": 1.0,
+      "row": 416,
+      "col": 0,
+      "e_left": 698351.0,
+      "n_top": 2028733.0,
+      "cell": 1.0,
+      "nodata_frac": 0.128
+    },
+    {
+      "id": "control12_1m_r416_c208",
+      "tag": "control12",
+      "res": 1.0,
+      "row": 416,
+      "col": 208,
+      "e_left": 698559.0,
+      "n_top": 2028733.0,
+      "cell": 1.0,
+      "nodata_frac": 0.138
+    },
+    {
+      "id": "control12_1m_r416_c416",
+      "tag": "control12",
+      "res": 1.0,
+      "row": 416,
+      "col": 416,
+      "e_left": 698767.0,
+      "n_top": 2028733.0,
+      "cell": 1.0,
+      "nodata_frac": 0.24
+    },
+    {
+      "id": "control12_1m_r416_c624",
+      "tag": "control12",
+      "res": 1.0,
+      "row": 416,
+      "col": 624,
+      "e_left": 698975.0,
+      "n_top": 2028733.0,
+      "cell": 1.0,
+      "nodata_frac": 0.369
+    },
+    {
+      "id": "control12_1m_r624_c208",
+      "tag": "control12",
+      "res": 1.0,
+      "row": 624,
+      "col": 208,
+      "e_left": 698559.0,
+      "n_top": 2028525.0,
+      "cell": 1.0,
+      "nodata_frac": 0.491
+    },
+    {
+      "id": "control12_1m_r624_c416",
+      "tag": "control12",
+      "res": 1.0,
+      "row": 624,
+      "col": 416,
+      "e_left": 698767.0,
+      "n_top": 2028525.0,
+      "cell": 1.0,
+      "nodata_frac": 0.363
+    },
+    {
+      "id": "control12_1m_r624_c624",
+      "tag": "control12",
+      "res": 1.0,
+      "row": 624,
+      "col": 624,
+      "e_left": 698975.0,
+      "n_top": 2028525.0,
+      "cell": 1.0,
+      "nodata_frac": 0.206
+    }
+  ]
+}
